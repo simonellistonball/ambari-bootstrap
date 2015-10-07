@@ -25,3 +25,4 @@ VERSION=`hdp-select status hadoop-client | sed 's/hadoop-client - \([0-9]\.[0-9]
 git clone https://github.com/hortonworks-gallery/ambari-zeppelin-service.git   /var/lib/ambari-server/resources/stacks/HDP/$VERSION/services/ZEPPELIN   
 git clone https://github.com/hortonworks-gallery/randerzander/jupyter-service.git   /var/lib/ambari-server/resources/stacks/HDP/$VERSION/services/jupyter-service
 
+ambari-server restart
