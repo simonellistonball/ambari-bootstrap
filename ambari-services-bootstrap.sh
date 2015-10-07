@@ -17,13 +17,12 @@ set -o pipefail
 #       export install_ambari_server=true
 #       sh ambari-bootstrap.sh
 
-yum install -y git
-yum install -y apache-maven
+yum install -y git apache-maven
 
 #VERSION=`hdp-select status hadoop-client | sed 's/hadoop-client - \([0-9]\.[0-9]\).*/\1/'`
 
 git clone https://github.com/hortonworks-gallery/ambari-zeppelin-service.git   /var/lib/ambari-server/resources/stacks/HDP/$VERSION/services/ZEPPELIN
 git clone https://github.com/hortonworks-gallery/randerzander/jupyter-service.git   /var/lib/ambari-server/resources/stacks/HDP/$VERSION/services/jupyter-service
-git clone https://github.com/simonellistonball/ambari-freeipa-service.git   /var/lib/ambari-server/resources/stacks/HDP/$VERSION/services/ambari-freeipa-service   
+git clone https://github.com/simonellistonball/ambari-freeipa-service.git   /var/lib/ambari-server/resources/stacks/HDP/$VERSION/services/ambari-freeipa-service
 
 ambari-server restart
