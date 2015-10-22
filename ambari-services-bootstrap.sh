@@ -23,7 +23,7 @@ yum install -y git
 VERSION=2.3
 
 git clone https://github.com/hortonworks-gallery/ambari-zeppelin-service.git   /var/lib/ambari-server/resources/stacks/HDP/$VERSION/services/ZEPPELIN
-git clone https://github.com/hortonworks-gallery/randerzander/jupyter-service.git   /var/lib/ambari-server/resources/stacks/HDP/$VERSION/services/jupyter-service
+git clone https://github.com/randerzander/jupyter-service.git   /var/lib/ambari-server/resources/stacks/HDP/$VERSION/services/jupyter-service
 git clone https://github.com/simonellistonball/ambari-freeipa-service.git   /var/lib/ambari-server/resources/stacks/HDP/$VERSION/services/ambari-freeipa-service
 git clone https://github.com/simonellistonball/ambari-freeipa-client.git   /var/lib/ambari-server/resources/stacks/HDP/$VERSION/services/ambari-freeipa-client
 
